@@ -2,31 +2,33 @@
 [[_TOC_]]
 ## Einführungstext 
 
-TODO: In 2-3 Sätzen beschreiben was die Skripte grundsaetzlich tun.
+1. Skript: Klonen und Updaten (falls schon vorhanden) von Repos
+2. Logfile (csv) erstellen von einem User-definierten Base-Verzeichnis (enthält Repos) von Commits
 
 ## Installationsanleitung für Administratoren
 
 ### Installation
 
-TODO: Wie ist das skript zu installieren. (z.B. apt-get install ... oder tar xvf .... oder ...)
+Klonen von Repo und ausführen der .py dateien per python3 SKRIPTNAME.py
 
 ### Konfiguration
 
-TODO: Beschreibung der Konfigurationsfiles (Beispiel-Files erstellen im Repo)
+coneGit.config muss im gleichen Verzeichnis wie das Skript sein und die URL des Repos und den Branch beeinhalten
+Falls config nicht gefunden wird ein Error geworfen.
 
-TODO: Wie ist ein allfaelliger Cronjob einzurichten
+Cronjob kann wie bei LB1 erstellt werden indem dort das Skript angepasst wird
 
-TODO: Wie sind User-Home-Templates einzurichten
+Keine User-Home-Templates
 
 ....
 
 ## Bediensanleitung Benutzer
 
-TODO: Erzeugen der Input-Files beschreiben, falls noetig
+Keine Input files nötig ausser der Config
 
-TODO: beschreiben des Scriptaufruf
+Skriptaufruf durch navigieren zum Skriptverzeichnis per Konsole und ausführen wie bei "Installation" beschrieben
 
-TODO: beschreiben der erzeugt files (falls solche erzeugt werden)
+Erzeugte Files: Logfile
 
-TODO: Lokation von logfiles und bekannte Fehlermeldungen beschreiben.
+Logfile wird im gleichen Verzeichnis wie das Skript gespeichert
 
