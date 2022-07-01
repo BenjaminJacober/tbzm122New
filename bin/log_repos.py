@@ -33,5 +33,7 @@ with open(file, 'w', newline='\n') as csvfile:
             gitCommand = "cd " + baseDirWithSlash + str(dir) + "&& git log --date=format:%Y%m%" + "d --pretty=format:" + str(dir) + ",%" + "cd,%H,%" + "cn"
             gitOut = subprocess.check_output(gitCommand, shell=True, text=True, universal_newlines=True)
 
-            output = gitOut.replace("\n", ",")
-            CSV_WRITER.writerow(output)
+            newLineCharacter = gitOut.split("\n")
+            for line in newLineCharacter:
+                out = line.split(",")
+                CSV_WRITER.writerow(out)
