@@ -13,6 +13,6 @@ Skript 2
 | Testfall | Testbeschreibung | Testdaten | erwartetes Testresultat | erhaltenes Testresultat | Tester | Testdatum und Teststatus |
 |  - | - | - | - | - | - | - |
 | Erstmaliger Aufruf | Das Skript soll mit einem Verzeichnis als parameter augerufen werden in welchem 2 Repos sind:<pre> git_extract_commits.bash /tmp/myrepos /tmp/commits.csv</pre> | Verzeichnis mit den GIT-Repos die mit dem Skript 1 geklont wurden:<pre>/tmp/myrepos</pre> | Alle Repos aus /tmp/myrepos werden gelesen und ein File /tmp/commits.csv erstellt mit allen Commits beider Repos | | | |
-| ohne parameter |programm wird ohne parameter aufgerufen - | error | error | steffen | 1.7.2022: positive
-| ohne file paramet | skrpt ohne inputfile parameter  - |  error | error | steffen | 1.7.2022: positive
+| ohne parameter |programm wird ohne parameter aufgerufen | - | error | error | steffen | 1.7.2022: positive
+| ohne file paramet | skrpt ohne inputfile parameter  | - |  error | error | steffen | 1.7.2022: positive
 | erfolgreiches erstellen output | programm korrekt gestartet um output file erzeugen | python3 log_repos.py --baseDir TestFolder --outputFile outputFile.csv | erstellen output.csv mit daten | erstellt output.csv mit daten | steffen | 1.7.2022: positive
