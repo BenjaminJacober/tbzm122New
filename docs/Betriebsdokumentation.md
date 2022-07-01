@@ -12,7 +12,9 @@
 Klonen von Repo und ausführen der .py dateien per python3 SKRIPTNAME.py
 
 ```git clone git@github.com:BenjaminJacober/tbzm122New.git```
+
 ```python3 clone_repos.py```
+
 ```python3 log_repos.py```
 
 ### Konfiguration
