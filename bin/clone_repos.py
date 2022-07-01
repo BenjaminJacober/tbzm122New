@@ -45,6 +45,7 @@ for line in csv:
 # Remove directories that aren't in inputFile anymore
 for dir in directories:
     for line in csv:
+        print(dir)
         if (dir not in line):
             print("I am here")
             print("rm -r " + baseDirWithSlash + str(dir))
