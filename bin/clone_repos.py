@@ -28,9 +28,9 @@ for dir in directories:
         print(line2)
         if (dir not in line2):
             print("I am here")
-            print("rm -r " + baseDirWithSlash + str(dir))
-            os.system("rm -rf " + baseDirWithSlash + str(dir))
-            # shutil.rmtree(parameter.baseDir + str(dir))
+            print("rm -rf " + baseDirWithSlash + str(dir))
+            # os.system("rm -rf " + baseDirWithSlash + str(dir))
+            shutil.rmtree(baseDirWithSlash + str(dir))
 
 # Clone and pull directories
 for line in csv:
