@@ -25,6 +25,8 @@ Klonen von Repo und ausführen der .py dateien per python3 SKRIPTNAME.py
 
 1. Repo klonen
 
-2. Input File anpassen
+```https://github.com/BenjaminJacober/tbzm122New```
+
+2. Input File anpassen (```inputFile.csv```)
 
 3. Skripte nach belieben ausführen
