@@ -31,7 +31,7 @@ for line in csv:
         # Clone
         if (repoName not in directories):
             logging.info("Cloning repository")
-            gitcommand = "git clone " + str(repoSSH) + " " + repoDirectory
+            gitcommand = "git clone " + str(repoSSH) + " " + repoDirectory + " && git config --global --add safe.directory " + repoDirectory
             print(gitcommand)
         # Pull
         else:
