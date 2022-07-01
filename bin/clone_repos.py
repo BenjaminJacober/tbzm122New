@@ -42,6 +42,7 @@ for line in csv:
         logging.warning(
             "CSV doesn't have all fields, check documentation to see how to properly format the input file.")
 
+print("sdfasdf")
 # Remove directories that aren't in inputFile anymore
 for dir in directories:
     for line in csv:
