@@ -14,10 +14,6 @@ Klonen von Repo und ausführen der .py dateien per python3 SKRIPTNAME.py
 ### Konfiguration
 
 
-Cronjob kann wie bei LB1 erstellt werden indem dort das Skript angepasst wird
-
-Keine User-Home-Templates
-
 ....
 
 ## Bediensanleitung Benutzer
