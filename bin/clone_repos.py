@@ -46,5 +46,7 @@ for line in csv:
 for dir in directories:
     for line in csv:
         if (dir not in line):
+            print("I am here")
+            print("rm -r " + baseDirWithSlash + str(dir))
             os.system("rm -r " + baseDirWithSlash + str(dir))
             # shutil.rmtree(parameter.baseDir + str(dir))
