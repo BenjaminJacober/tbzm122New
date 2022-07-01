@@ -13,8 +13,6 @@ Klonen von Repo und ausführen der .py dateien per python3 SKRIPTNAME.py
 
 ### Konfiguration
 
-coneGit.config muss im gleichen Verzeichnis wie das Skript sein und die URL des Repos und den Branch beeinhalten
-Falls config nicht gefunden wird ein Error geworfen.
 
 Cronjob kann wie bei LB1 erstellt werden indem dort das Skript angepasst wird
 
