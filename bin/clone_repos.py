@@ -42,9 +42,9 @@ for line in csv:
         logging.warning(
             "CSV doesn't have all fields, check documentation to see how to properly format the input file.")
 
-print("sdfasdf")
 # Remove directories that aren't in inputFile anymore
 for dir in directories:
+    print("sdfasdf")
     for line in csv:
         print(dir)
         if (dir not in line):
