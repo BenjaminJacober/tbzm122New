@@ -11,7 +11,7 @@ Skript kann mit Option -d [PATH]  aufgerufen werden, um das Base-Directory festz
 CronJobs müssen manuell erstellt werden
 
 2. Skript
-Das 2. Skript benötigt 2 Parameter, -o [FILE] für das Outputfile und -d [PATH] für das Base-Directory
+Das 2. Skript benötigt 2 Parameter, -outputName [FILE] für das Outputfile und -baseDir [PATH] für das Base-Directory
 
 ### Ablauf der Automation
 
