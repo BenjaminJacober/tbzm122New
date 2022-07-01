@@ -31,8 +31,8 @@ for line in csv:
         # Clone
         if (repoName not in directories):
             logging.info("Cloning repository")
-            print(str(repoSSH))
             gitcommand = "git clone " + str(repoSSH) + " " + repoDirectory
+            print(gitcommand)
         # Pull
         else:
             logging.info("Pulling repository")
