@@ -30,3 +30,7 @@ Klonen von Repo und ausführen der .py dateien per python3 SKRIPTNAME.py
 2. Input File anpassen (```inputFile.csv```)
 
 3. Skripte nach belieben ausführen
+
+
+```python3 log_repos.py --baseDir TestFolder --outputFile outputFile.csv```
+```python3 clone_repos.py --baseDir TestFolder --inputFile inputfile.csv```
