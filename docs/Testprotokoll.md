@@ -3,9 +3,9 @@ Skript 1
 | Testfall | Testbeschreibung | Testdaten | erwartetes Testresultat | erhaltenes Testresultat | Tester | Testdatum und Teststatus |
 |  - | - | - | - | - | - | - |
 | Erstmaliger Aufruf | Das Skript soll mit einem input file aufgerufen werden, in welchem nur verfügbare Git-URLs sind. Diese sollen in ein noch nicht existierendes Verzeichnis geklont werden:<pre>git_clone_update_repos.bash repolist.txt /tmp/myrepos</pre> | repolist.txt mit folgendem Inhalt:<pre>https://gitlab.com/armindoerzbachtbz/m122_praxisarbeit Armin_Doerzbach<br>https://gitlab.com/wapdc/InfoSearch/Project-2017 Hans_Meier_Peter_Mueller</pre> | Verzeichnis wird erstellt und alle Repos werden darin geklont | | | |
-| ohne parameter |programm wird ohne parameter aufgerufen | - | - | error | error | steffen | 1.7.2022: positive
-|  | skrpt ohne inputfile parameter | - | - |  error | error | steffen | 1.7.2022: positive
-| erfolgreiches clonen | programm korrekt gestartet um repo zu clonen | - | python3 clone_repos.py --baseDir TestFolder --outputFile inpuitFile.csv | clonen von repos | ordner mit repos erfolgerich erstellt | steffen | 1.7.2022: positive
+| ohne parameter |programm wird ohne parameter aufgerufen | - | python3 clone_repos.py | error | error | steffen | 1.7.2022: positive
+|  | skrpt ohne inputfile parameter | - | python3 clone_repos.py --baseDir |  error | error | steffen | 1.7.2022: positive
+| erfolgreiches clonen | programm korrekt gestartet um repo zu clonen | - | python3 clone_repos.py --baseDir TestFolder --outputFile inputFile.csv | clonen von repos | ordner mit repos erfolgerich erstellt | steffen | 1.7.2022: positive
 
 
 Skript 2
