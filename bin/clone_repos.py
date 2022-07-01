@@ -44,8 +44,6 @@ for line in csv:
 
 # Remove directories that aren't in inputFile anymore
 for dir in directories:
-    print("sdfasdf")
-    print(dir)
     for line2 in csv:
         print(line2)
         if (dir not in line2):
