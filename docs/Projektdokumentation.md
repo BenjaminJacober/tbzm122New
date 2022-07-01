@@ -7,7 +7,7 @@ Anhand der Analyse wurde folgendes Lösungsdesign entworfen.
 
 ### Aufruf der Skripte
 1. Skript
-Skript kann mit Option -d [PATH]  aufgerufen werden, um das Base-Directory festzulegen
+Skript kann mit Option -baseDir [PATH] und -inputFile [PATH]  aufgerufen werden, um das Base-Directory festzulegen und das Inputfile einzulesen
 CronJobs müssen manuell erstellt werden
 
 2. Skript
