@@ -7,8 +7,8 @@ from csv import reader
 PARSER = argparse.ArgumentParser(description='Clones git repos')
 
 # Required parameters
-PARSER.add_argument('basedir', help='Where the directories will be cloned to')
-PARSER.add_argument('inputfile', help='input csv file that contains the git repos')
+PARSER.add_argument('--baseDir', help='Where the directories will be cloned to')
+PARSER.add_argument('--inputFile', help='input csv file that contains the git repos')
 
 parameter = PARSER.parse_args()
 
@@ -31,6 +31,7 @@ for line in csv:
         # Clone
         if (repoName not in directories):
             logging.info("Cloning repository")
+            print(str(repoSSH))
             gitcommand = "git clone " + str(repoSSH) + " " + repoDirectory
         # Pull
         else:
