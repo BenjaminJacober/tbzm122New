@@ -19,7 +19,7 @@ if (parameter.baseDir[len(parameter.baseDir) - 1] != "/"):
 
 directories = os.listdir(baseDirWithSlash)
 
-inputFile = open(parameter.inputfile, newline='')
+inputFile = open(parameter.inputFile, newline='')
 csv = reader(inputFile, delimiter=',')
 
 # Clone and pull directories
