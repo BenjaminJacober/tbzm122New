@@ -12,12 +12,12 @@ PARSER.add_argument('--inputFile', help='input csv file that contains the git re
 
 parameter = PARSER.parse_args()
 
-baseDirWithSlash = parameter.basedir
+baseDirWithSlash = parameter.baseDir
 
-if (parameter.basedir[len(parameter.basedir) - 1] != "/"):
+if (parameter.baseDir[len(parameter.baseDir) - 1] != "/"):
     baseDirWithSlash += "/"
 
-directories = os.listdir(parameter.basedir)
+directories = os.listdir(baseDirWithSlash)
 
 inputFile = open(parameter.inputfile, newline='')
 csv = reader(inputFile, delimiter=',')
@@ -27,7 +27,7 @@ for line in csv:
     if (len(line) == 2):
         repoName = line[1]
         repoSSH = line[0]
-        repoDirectory = parameter.basedir + str(repoName)
+        repoDirectory = baseDirWithSlash + str(repoName)
         # Clone
         if (repoName not in directories):
             logging.info("Cloning repository")
@@ -47,5 +47,5 @@ for line in csv:
 for dir in directories:
     for line in csv:
         if (dir not in line):
-            # os.system("rm -r " + baseDirWithSlash + str(dir))
-            shutil.rmtree(parameter.basedir + str(dir))
+            os.system("rm -r " + baseDirWithSlash + str(dir))
+            # shutil.rmtree(parameter.baseDir + str(dir))
