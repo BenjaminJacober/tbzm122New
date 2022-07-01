@@ -8,7 +8,7 @@ PARSER = argparse.ArgumentParser(description='Logs git repos')
 
 # Required parameters
 PARSER.add_argument('--baseDir', help='Where the directories will be cloned to')
-PARSER.add_argument('--outputName', help='The name of the outputfile you want to ')
+PARSER.add_argument('--outputFile', help='The name of the output file you want to ')
 
 parameter = PARSER.parse_args()
 
@@ -18,7 +18,7 @@ if (parameter.baseDir[len(parameter.baseDir) - 1] != "/"):
 
 directories = os.listdir(baseDirWithSlash)
 
-file = baseDirWithSlash + "output/" + parameter.outputName
+file = baseDirWithSlash + "output/" + parameter.outputFile
 
 # Checks if output dir exists, if not creates that directory
 os.makedirs(os.path.dirname(file), exist_ok=True)
