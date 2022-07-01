@@ -38,7 +38,6 @@ for line in csv:
             logging.info("Pulling repository")
             gitcommand = "cd " + repoDirectory + " && git pull"
         os.system(gitcommand)
-        # subprocess.run(gitcommand, shell=True, check=True)
     else:
         logging.warning(
             "CSV doesn't have all fields, check documentation to see how to properly format the input file.")
