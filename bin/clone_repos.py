@@ -29,7 +29,7 @@ for dir in directories:
         if (dir not in line2):
             print("I am here")
             print("rm -r " + baseDirWithSlash + str(dir))
-            os.system("rm -r " + baseDirWithSlash + str(dir))
+            os.system("rm -rf " + baseDirWithSlash + str(dir))
             # shutil.rmtree(parameter.baseDir + str(dir))
 
 # Clone and pull directories
