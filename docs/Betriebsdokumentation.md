@@ -17,6 +17,10 @@ Klonen von Repo und ausführen der .py dateien per python3 SKRIPTNAME.py
 
 ```python3 log_repos.py```
 
+Install at least python 3.8
+
+```sudo apt-get install python3.8```
+
 ### Konfiguration
 
 
