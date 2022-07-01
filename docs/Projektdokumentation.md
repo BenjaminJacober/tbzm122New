@@ -6,16 +6,25 @@
 Anhand der Analyse wurde folgendes Lösungsdesign entworfen.
 
 ### Aufruf der Skripte
+1. Skript
+Skript kann mit Option -d [PATH]  aufgerufen werden, um das Base-Directory festzulegen
+CronJobs müssen manuell erstellt werden
 
-TODO: schreiben sie wie die Skripte aufgerufen werden sollen (d.h. welche Parameter werden übergeben, gibt es Interaktionen mit dem Skript, läuft es automatisch täglich ab?)
+2. Skript
+Das 2. Skript benötigt 2 Parameter, -o [FILE] für das Outputfile und -d [PATH] für das Base-Directory
 
 ### Ablauf der Automation
 
-TODO: Hier kommt ihr UML-Activity Diagramm
+activityDiagram.png
 
 ### Konfigurationsdateien
 
-TODO: Definieren sie welche Parameter in welchen Konfigurationsdateien gespeichert werden.
+1. Skript
+Das Konfigfile hat folgendes Format:
+git@github.com:BenjaminJacober/tbzm122New.git <git_repo_url> <directory_name>
+
+2. Skript
+Keine Konfiguration
 
 ## Abgrenzungen zum Lösungsdesign
 
