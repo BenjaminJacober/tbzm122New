@@ -46,8 +46,9 @@ for line in csv:
 for dir in directories:
     print("sdfasdf")
     print(dir)
-    for line in csv:
-        if (dir not in line):
+    for line2 in csv:
+        print(line2)
+        if (dir not in line2):
             print("I am here")
             print("rm -r " + baseDirWithSlash + str(dir))
             os.system("rm -r " + baseDirWithSlash + str(dir))
