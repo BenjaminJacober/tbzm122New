@@ -1,7 +1,6 @@
 import argparse
 import logging
 import os
-import shutil
 from csv import reader
 
 PARSER = argparse.ArgumentParser(description='Clones git repos')
@@ -13,7 +12,6 @@ PARSER.add_argument('--inputFile', help='input csv file that contains the git re
 parameter = PARSER.parse_args()
 
 baseDirWithSlash = parameter.baseDir
-
 if (parameter.baseDir[len(parameter.baseDir) - 1] != "/"):
     baseDirWithSlash += "/"
 
@@ -31,13 +29,12 @@ for line in csv:
         # Clone
         if (repoName not in directories):
             logging.info("Cloning repository")
-            gitcommand = "git clone " + str(repoSSH) + " " + repoDirectory + " && git config --global --add safe.directory " + repoDirectory
-            print(gitcommand)
+            gitCommand = "git clone " + str(repoSSH) + " " + repoDirectory
         # Pull
         else:
             logging.info("Pulling repository")
-            gitcommand = "cd " + repoDirectory + " && git pull"
-        os.system(gitcommand)
+            gitCommand = "cd " + repoDirectory + " && git pull"
+        os.system(gitCommand)
     else:
         logging.warning(
             "CSV doesn't have all fields, check documentation to see how to properly format the input file.")
@@ -49,5 +46,4 @@ for dir in directories:
         if (dir not in line2):
             print("I am here")
             print("rm -rf " + baseDirWithSlash + str(dir))
-            # os.system("rm -rf " + baseDirWithSlash + str(dir))
-            shutil.rmtree(baseDirWithSlash + str(dir))
+            os.system("rm -rf " + baseDirWithSlash + str(dir))
