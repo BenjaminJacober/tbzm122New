@@ -29,6 +29,7 @@ for line in csv:
         # Clone
         if (repoName not in directories):
             logging.info("Cloning repository")
+            print(repoDirectory)
             # The git config part was an error we got, so we just added it here. Now it works.
             gitCommand = "git clone " + str(repoSSH) + " " + repoDirectory + " && git config --global --add safe.directory " + repoDirectory
         # Pull
