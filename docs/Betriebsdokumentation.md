@@ -33,4 +33,5 @@ Klonen von Repo und ausführen der .py dateien per python3 SKRIPTNAME.py
 
 
 ```python3 log_repos.py --baseDir TestFolder --outputFile outputFile.csv```
+
 ```python3 clone_repos.py --baseDir TestFolder --inputFile inputfile.csv```
