@@ -15,7 +15,7 @@ Das 2. Skript benötigt 2 Parameter, -outputName [FILE] für das Outputfile und 
 
 ### Ablauf der Automation
 
-activityDiagram.png
+![IMAGE](activityDiagram.png)
 
 ### Konfigurationsdateien
 
