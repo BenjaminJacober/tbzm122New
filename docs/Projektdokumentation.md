@@ -20,8 +20,8 @@ activityDiagram.png
 ### Konfigurationsdateien
 
 1. Skript
-Das Konfigfile hat folgendes Format:
-git@github.com:BenjaminJacober/tbzm122New.git <git_repo_url> <directory_name>
+Das Inputfile hat folgendes Format:
+<git_repo_url> <directory_name>
 
 2. Skript
 Keine Konfiguration
